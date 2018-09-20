@@ -2,9 +2,9 @@ import argparse
 from roman import RomanNumber
 
 parser = argparse.ArgumentParser(description='Convert arabic numbers to roman')
-parser.add_argument('-i', '--input-file', help='Input file with arabic numbers, each line containing one number',
+parser.add_argument('-i', '--input-file', help='Input file with arabic numbers, each line containing one number, default is ARAB.IN',
                     metavar='file', default='ARAB.IN', type=argparse.FileType('r'))
-parser.add_argument('-o', '--output-file', help='Name of the output file for converted numbers',
+parser.add_argument('-o', '--output-file', help='Name of the output file for converted numbers, default is ROMAN.OUT',
                     metavar='file', default='ROMAN.OUT', type=argparse.FileType('w'))
 args = parser.parse_args()
 
